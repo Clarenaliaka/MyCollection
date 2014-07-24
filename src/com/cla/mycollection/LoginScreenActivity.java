@@ -14,6 +14,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 
@@ -21,7 +22,7 @@ public class LoginScreenActivity extends Activity implements OnClickListener {
 
 EditText etname,etpassword;
 CheckBox chkpassword;
-Button btntoast,btnback;
+Button  btntoast,btnback;
 String strusername,strpassword;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +71,29 @@ String strusername,strpassword;
 		// we will intent using the switch case
 		switch (v.getId()) {
 		case R.id.btntoast:
-			startActivity(new Intent(getApplicationContext(),ToastScreenActivity.class));
+			String UserName = "Clare";
+			String Password = "naliaka";
+			if(etname.getText().toString().equals("") && etpassword.getText().toString().equals("")){
+				Toast.makeText(getApplicationContext(), "Please enter the username and password", Toast.LENGTH_SHORT).show();
+			}
+			else if (etname.getText().toString().equals("")) {
+				Toast.makeText(getApplicationContext(), "Please enter the username", Toast.LENGTH_SHORT).show();
+			}
+			else if (etpassword.getText().toString().equals("")) {
+				Toast.makeText(getApplicationContext(), "Please enter the password", Toast.LENGTH_SHORT).show();
+			}
+			else if (!etname.getText().toString().equals(UserName)) {
+				Toast.makeText(getApplicationContext(), "Please enter the correct username", Toast.LENGTH_SHORT).show();
+			}
+			
+			else if (!etpassword.getText().toString().equals(UserName)) {
+				Toast.makeText(getApplicationContext(), "Please enter the correct password", Toast.LENGTH_SHORT).show();
+			}
+			
+			else if(etname.getText().toString().equals("") && etpassword.getText().toString().equals("")){
+				Toast.makeText(getApplicationContext(), "Login successful", Toast.LENGTH_SHORT).show();
+			}
+			//startActivity(new Intent(getApplicationContext(),ToastScreenActivity.class));
 			
 			break;
 

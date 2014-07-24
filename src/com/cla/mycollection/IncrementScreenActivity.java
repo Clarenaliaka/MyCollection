@@ -34,27 +34,23 @@ public class IncrementScreenActivity extends Activity implements OnClickListener
 
 	@Override
 	public void onClick(View v) {
-		String showText ="false";
-		Intent intent = new Intent(this,IncrementScreenActivity.class);
-		strname=etname.getText().toString();
-		
-		//strname = Integer.parseInt(strname);
-				switch (v.getId()) {
-				case R.id.btnincre:
-					number++; showText="true";
-					break;
-                case R.id.btndecre:
-                	number--; showText="true";
-					break;
+		int value = 0;
+		switch (v.getId()) {
+		case R.id.btnincre:
+		value = Integer.parseInt(etname.getText().toString());
+		++value; // pre-increment
+		etname.setText("" + value); // update text
+		tvresults.setText("The result is:" + value); //update label
+		break;
+		case R.id.btndecre:
 
-				default:
-					break;}
-				if (showText != null) {
-					tvresults.setText("results:" +number);
-					
-				}
-				}
-	
+		value = Integer.parseInt(etname.getText().toString());
+		--value;
+		etname.setText("" + value); // update text
+		tvresults.setText("The decrement is:" + value); // update label
+		break;
 
-	
-}
+		default:
+		break;
+		}
+}}

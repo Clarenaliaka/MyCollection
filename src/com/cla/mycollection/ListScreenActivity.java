@@ -21,7 +21,7 @@ public class ListScreenActivity extends Activity implements OnItemClickListener 
 	//Declaration
 	private ListView listview;
 	private android.widget.ArrayAdapter<String> stringArrayAdapter;
-	String[] lists ={"Addition","Subtraction","Login Form","Increment","Decrement","Button Toast","Countries"};
+	String[] lists ={"Addition","Subtraction","Login Form","Increment","Decrement","Button Toast","Countries","Tabs"};
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -68,6 +68,10 @@ public class ListScreenActivity extends Activity implements OnItemClickListener 
 
             case 6:
             	startActivity(new Intent(getApplicationContext(),CountryScreenActivity.class));
+	        break;
+	        
+            case 7:
+            	startActivity(new Intent(getApplicationContext(),TabsActivity.class));
 	        break;
 
 		default:
