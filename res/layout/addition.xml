@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkbrown" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numberone" 
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/etnumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@color/white" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/numbertwo"
+         android:layout_margin="20dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etnumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvresults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/results"
+        android:layout_margin="10dp"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="89dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:text="@string/btnadd"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:text="@string/btnsub"
+        android:textSize="45sp" />
+
+</RelativeLayout>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/btnback"
+        android:textSize="25sp" />
+
+</LinearLayout>

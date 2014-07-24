@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkbrown" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name" 
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:background="@color/white">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:background="@color/white"/>
+
+    <CheckBox
+        android:id="@+id/chkpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chkpassword"
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        />
+
+    <Button
+        android:id="@+id/btntoast"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btntoast" 
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btnback" 
+        android:layout_margin="10dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+
+</LinearLayout>
