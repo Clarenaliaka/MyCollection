@@ -42,5 +42,6 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_contact">ContactActivity</string>
-
+<string name="username">clare</string>
+<string name="phonenumber">0713748998</string>
 </resources>

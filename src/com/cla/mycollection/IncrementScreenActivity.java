@@ -38,16 +38,16 @@ public class IncrementScreenActivity extends Activity implements OnClickListener
 		switch (v.getId()) {
 		case R.id.btnincre:
 		value = Integer.parseInt(etname.getText().toString());
-		++value; // pre-increment
-		etname.setText("" + value); // update text
+		value++; // pre-increment
+		etname.setText("" + value); // this is to update text
 		tvresults.setText("The result is:" + value); //update label
 		break;
 		case R.id.btndecre:
 
 		value = Integer.parseInt(etname.getText().toString());
-		--value;
+		value--;
 		etname.setText("" + value); // update text
-		tvresults.setText("The decrement is:" + value); // update label
+		tvresults.setText("The results:" + value); // update label
 		break;
 
 		default:

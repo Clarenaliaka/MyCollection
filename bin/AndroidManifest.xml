@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cla.mycollection"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ListScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdditionScreenActivity"
+            android:label="@string/title_activity_addition_screen" >
+        </activity>
+        <activity
+            android:name=".IncrementScreenActivity"
+            android:label="@string/title_activity_increment_screen" >
+        </activity>
+        <activity
+            android:name=".LoginScreenActivity"
+            android:label="@string/title_activity_login_screen" >
+        </activity>
+        <activity
+            android:name=".ToastScreenActivity"
+            android:label="@string/title_activity_toast_screen" >
+        </activity>
+        <activity
+            android:name=".CountryScreenActivity"
+            android:label="@string/title_activity_country_screen" >
+        </activity>
+        <activity
+            android:name=".TabsActivity"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:label="@string/title_activity_contact" >
+        </activity>
+    </application>
+
+</manifest>

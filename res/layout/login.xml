@@ -19,8 +19,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10" 
-        android:background="@color/white">
-
+        android:background="@color/white"
+        >
         <requestFocus />
     </EditText>
 
@@ -52,12 +52,15 @@
 
     <Button
         android:id="@+id/btntoast"
-        android:layout_width="151dp"
+        android:layout_width="157dp"
         android:layout_height="wrap_content"
-        android:text="@string/btntoast" 
         android:layout_margin="10dp"
+        android:text="@string/btntoast"
+        android:textColor="@color/black"
         android:textSize="25sp"
-        android:textColor="@color/black"/>
+        android:background="@drawable/button_style"
+        
+         />
 
     <Button
         android:id="@+id/btnback"
@@ -67,5 +70,6 @@
         android:layout_margin="10dp"
         android:textSize="25sp"
         android:textColor="@color/black"/>
+    
 
 </LinearLayout>
